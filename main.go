@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"os"
+	"time"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/compress"
@@ -22,5 +24,9 @@ func main() {
 
 	fmt.Println("Listening on port : " + env.ServicePort)
 	fmt.Println("Ready to serve")
-	app.Listen(fmt.Sprintf(":%s", env.ServicePort))
+	if err := app.Listen(fmt.Sprintf(":%s", env.ServicePort)); err != nil {
+		fmt.Println(err)
+		time.Sleep(5 * time.Second)
+		os.Exit(1)
+	}
 }
