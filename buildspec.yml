@@ -13,7 +13,7 @@ phases:
   build:
     commands:
       # Build our application
-      - go build -o go-aws-eb
+      - go build -o bin/go-aws-eb
 
 artifacts:
   files:
