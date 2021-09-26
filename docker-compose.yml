@@ -1,0 +1,19 @@
+# version: "2.2"
+# services:
+#   web:
+#     container_name: go-aws-eb
+#     image: go-aws-eb:latest
+#     build: .
+#     ports:
+#       - 5000:5000
+
+version: "3.8"
+services:
+  web:
+    container_name: go-aws-eb
+    image: "6939572736/go-aws-eb:latest"
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:5000"
