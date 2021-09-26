@@ -24,7 +24,12 @@ func main() {
 
 	fmt.Println("Listening on port : " + env.ServicePort)
 	fmt.Println("Ready to serve")
-	if err := app.Listen(fmt.Sprintf(":%s", env.ServicePort)); err != nil {
+	// if err := app.Listen(fmt.Sprintf(":%s", env.ServicePort)); err != nil {
+	// 	fmt.Println(err)
+	// 	time.Sleep(5 * time.Second)
+	// 	os.Exit(1)
+	// }
+	if err := app.Listen(":5000"); err != nil {
 		fmt.Println(err)
 		time.Sleep(5 * time.Second)
 		os.Exit(1)
