@@ -33,11 +33,12 @@ func loadEnvFile() model.Properties {
 
 func loadEnv() model.Properties {
 	timestart := time.Now()
-	fmt.Println("Starting Load Config " + timestart.Format("2006-01-02 15:04:05"))
+	fmt.Printf("Starting Load Config %s\n", timestart.Format("2006-01-02 15:04:05"))
 	properties := model.Properties{
 		ServicePort: os.Getenv("SERVICE_PORT"),
+		LogPath:     os.Getenv("LOG_PATH"),
 	}
 	timefinish := time.Now()
-	fmt.Println("Finish Load Config " + timefinish.Format("2006-01-02 15:04:05"))
+	fmt.Printf("Finish Load Config %s\n", timefinish.Format("2006-01-02 15:04:05"))
 	return properties
 }

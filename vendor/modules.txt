@@ -13,6 +13,8 @@ github.com/gofiber/fiber/v2/internal/uuid
 github.com/gofiber/fiber/v2/middleware/compress
 github.com/gofiber/fiber/v2/middleware/etag
 github.com/gofiber/fiber/v2/utils
+# github.com/jeanphorn/log4go v0.0.0-20190526082429-7dbb8deb9468
+github.com/jeanphorn/log4go
 # github.com/joho/godotenv v1.3.0
 ## explicit
 github.com/joho/godotenv
@@ -20,6 +22,13 @@ github.com/joho/godotenv
 github.com/klauspost/compress/flate
 github.com/klauspost/compress/gzip
 github.com/klauspost/compress/zlib
+# github.com/muhammadluth/log v1.0.0
+## explicit
+github.com/muhammadluth/log
+# github.com/pkg/errors v0.9.1
+github.com/pkg/errors
+# github.com/toolkits/file v0.0.0-20160325033739-a5b3c5147e07
+github.com/toolkits/file
 # github.com/valyala/bytebufferpool v1.0.0
 github.com/valyala/bytebufferpool
 # github.com/valyala/fasthttp v1.29.0

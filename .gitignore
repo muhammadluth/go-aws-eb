@@ -3,8 +3,10 @@
 .DS_Store
 .env
 
-
 go.sum
+config-log.json
+logs
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
