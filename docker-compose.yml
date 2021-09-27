@@ -15,4 +15,4 @@ services:
       - LOG_PATH
 volumes:
   logs:
-    external: false
+    external: true
